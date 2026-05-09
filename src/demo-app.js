@@ -25,7 +25,10 @@ function createDemoApp() {
 function demoQueryFor(path) {
   switch (path) {
     case '/lodash/profile':
-      return { profilePath: 'profile.displayName' };
+      return {
+        profilePath: 'profile.displayName',
+        metadataPath: 'profile.metadata.badge'
+      };
     case '/js-yaml/document':
       return { document: 'name: demo\nrole: maintainer' };
     case '/qs/search':
@@ -44,4 +47,3 @@ function demoQueryFor(path) {
 }
 
 module.exports = { createDemoApp, demoQueryFor };
-

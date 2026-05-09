@@ -3,3 +3,5 @@ reachability-output*.json
 sca-output*.json
 *.tgz
 *.zip
+scripts/
+advisory-ids.txt

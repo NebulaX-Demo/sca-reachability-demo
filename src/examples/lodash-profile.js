@@ -2,19 +2,25 @@ const lodash = require('lodash');
 
 function registerLodashProfile(app) {
   app.get('/lodash/profile', (req, res) => {
-    const path = req.query.profilePath;
+    const profilePath = req.query.profilePath;
+    const metadataPath = req.query.metadataPath;
     const target = {};
 
-    applyLodashProfile(target, path);
+    applyLodashProfileValue(target, profilePath);
+    applyLodashProfileMetadata(target, metadataPath);
 
     return res.json(target);
   });
 }
 
-function applyLodashProfile(target, path) {
+function applyLodashProfileValue(target, path) {
   lodash.set(target, path, 'reachable-lodash-value');
   return target;
 }
 
-module.exports = registerLodashProfile;
+function applyLodashProfileMetadata(target, path) {
+  lodash.update(target, path, () => 'reachable-lodash-metadata');
+  return target;
+}
 
+module.exports = registerLodashProfile;
