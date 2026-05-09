@@ -1,0 +1,21 @@
+{
+  "name": "xeize-sca-reachability-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deliberately vulnerable Node.js project for XEIZE SCA reachability demos.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "scan:reachability": "node scripts/scan-reachability.js",
+    "validate:reachability": "node scripts/validate-reachability.js"
+  },
+  "dependencies": {
+    "js-yaml": "3.13.0",
+    "lodash": "4.17.18",
+    "node-serialize": "0.0.4",
+    "object-path": "0.11.4",
+    "qs": "6.9.6",
+    "set-value": "2.0.0",
+    "yaml": "2.2.1"
+  }
+}
