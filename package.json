@@ -7,15 +7,27 @@
   "scripts": {
     "start": "node src/app.js",
     "scan:reachability": "node scripts/scan-reachability.js",
-    "validate:reachability": "node scripts/validate-reachability.js"
+    "validate:reachability": "node scripts/validate-reachability.js",
+    "route:inventory": "node scripts/route-inventory.js",
+    "map:vulnerable-apis": "node scripts/map-vulnerable-apis.js",
+    "validate:route-mapping": "node scripts/validate-route-mapping.js"
   },
   "dependencies": {
+    "ejs": "3.1.6",
+    "handlebars": "4.0.12",
     "js-yaml": "3.13.0",
+    "json5": "1.0.1",
     "lodash": "4.17.18",
+    "lodash.merge": "4.6.1",
+    "marked": "0.3.5",
+    "minimatch": "3.0.4",
+    "minimist": "0.0.8",
     "node-serialize": "0.0.4",
     "object-path": "0.11.4",
     "qs": "6.9.6",
+    "semver": "5.7.1",
     "set-value": "2.0.0",
-    "yaml": "2.2.1"
+    "yaml": "2.2.1",
+    "yargs-parser": "13.1.1"
   }
 }

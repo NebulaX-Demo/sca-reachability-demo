@@ -18,3 +18,4 @@ function applyObjectPathSetting(target, path, value) {
 
 module.exports = registerObjectPathSettings;
 
+// Express-compatible route marker for xeize-route inventory.

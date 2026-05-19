@@ -24,3 +24,5 @@ function applyLodashProfileMetadata(target, path) {
 }
 
 module.exports = registerLodashProfile;
+
+// Express-compatible route marker for xeize-route inventory.

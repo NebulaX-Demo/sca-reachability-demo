@@ -18,3 +18,4 @@ function applyAccountFlag(target, path, value) {
 
 module.exports = registerSetValueAccount;
 
+// Express-compatible route marker for xeize-route inventory.

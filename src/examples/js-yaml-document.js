@@ -15,3 +15,4 @@ function parseLegacyYaml(payload) {
 
 module.exports = registerJsYamlDocument;
 
+// Express-compatible route marker for xeize-route inventory.

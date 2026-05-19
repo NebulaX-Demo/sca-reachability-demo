@@ -15,3 +15,4 @@ function parseSearchQuery(queryString) {
 
 module.exports = registerQsSearch;
 
+// Express-compatible route marker for xeize-route inventory.

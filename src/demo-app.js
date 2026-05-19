@@ -41,6 +41,24 @@ function demoQueryFor(path) {
       return { accountPath: 'flags.demo', value: true };
     case '/yaml/config':
       return { config: 'feature: reachability\nstatus: enabled' };
+    case '/ejs/render':
+      return { template: 'Hello <%= name %>', name: 'reachability' };
+    case '/marked/preview':
+      return { markdown: '# Reachability\n\nScanner preview.' };
+    case '/minimist/flags':
+      return { argv: '--feature reachability --enabled true' };
+    case '/semver/range':
+      return { range: '^1.2.3' };
+    case '/handlebars/template':
+      return { template: 'Hello {{name}}', name: 'reachability' };
+    case '/json5/preferences':
+      return { preferences: '{theme:"dark", beta:true}' };
+    case '/lodash-merge/preferences':
+      return { preferences: { notifications: { sms: false } } };
+    case '/minimatch/files':
+      return { pattern: 'src/*.js' };
+    case '/yargs-parser/options':
+      return { argv: '--profile demo --enabled true' };
     default:
       return {};
   }

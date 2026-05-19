@@ -15,3 +15,4 @@ function restoreSession(payload) {
 
 module.exports = registerNodeSerializeSession;
 
+// Express-compatible route marker for xeize-route inventory.

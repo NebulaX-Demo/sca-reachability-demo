@@ -15,3 +15,4 @@ function parseModernYaml(payload) {
 
 module.exports = registerYamlConfig;
 
+// Express-compatible route marker for xeize-route inventory.

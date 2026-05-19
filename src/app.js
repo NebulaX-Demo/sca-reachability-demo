@@ -7,7 +7,16 @@ const examples = [
   require('./examples/node-serialize-session'),
   require('./examples/object-path-settings'),
   require('./examples/set-value-account'),
-  require('./examples/yaml-config')
+  require('./examples/yaml-config'),
+  require('./examples/ejs-render'),
+  require('./examples/marked-preview'),
+  require('./examples/minimist-flags'),
+  require('./examples/semver-range'),
+  require('./examples/handlebars-template'),
+  require('./examples/json5-preferences'),
+  require('./examples/lodash-merge-preferences'),
+  require('./examples/minimatch-files'),
+  require('./examples/yargs-parser-options')
 ];
 
 function runDemo() {
@@ -25,4 +34,3 @@ if (require.main === module) {
 }
 
 module.exports = { runDemo };
-
